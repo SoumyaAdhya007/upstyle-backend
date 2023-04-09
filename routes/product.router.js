@@ -47,7 +47,6 @@ productRouter.post("/add", authentication, AdminAuth, async (req, res) => {
 
 productRouter.get("/filters", async (req, res) => {
     let product = req.query;
-    product = product.toLowerCase();
     try {
         const data = await ProducFiltertModel.findOne({ product });
         res.send(data);
