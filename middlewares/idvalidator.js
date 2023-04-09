@@ -1,4 +1,4 @@
-const { ProductModel } = require("../models/Products.model");
+const { ProductModel } = require("../models/products.model");
 
 const idvalidator = async (req, res, next) => {
     let id = req.params['id'];
